@@ -4,7 +4,7 @@
   roles:
   - redhat_cop.controller_configuration.dispatch
 
-tasks:
-- name: debug
-  ansible.builtin.debug:
-    var: "I did it!"
+  tasks:
+  - name: debug
+    ansible.builtin.debug:
+      var: "I did it!"
