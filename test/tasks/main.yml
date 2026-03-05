@@ -1,0 +1,7 @@
+---
+- hosts: controller
+  connection: local
+  roles:
+  - redhat_cop.controller_configuration.dispatch
+
+  tasks:
