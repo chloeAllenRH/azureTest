@@ -1,10 +1,11 @@
 ---
-- hosts: controller
+- name: setup controller
+  hosts: controller
   connection: local
-  roles:
-  - redhat_cop.controller_configuration.dispatch
-
+  gather_facts: false
   tasks:
+  - name: include the roles to config controller 
+    ansible.builtin.include_role: redhat_cop.controller_configuration.dispatch
   - name: debug
     ansible.builtin.debug:
       var: "I did it!"
