@@ -1,6 +1,6 @@
 ---
 - name: setup controller
-  hosts: controller
+  hosts: localhost
   connection: local
   gather_facts: false
   tasks:
