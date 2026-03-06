@@ -5,7 +5,8 @@
   gather_facts: false
   tasks:
   - name: include the roles to config controller 
-    ansible.builtin.include_role: redhat_cop.controller_configuration.dispatch
+    ansible.builtin.include_role: 
+      name: redhat_cop.controller_configuration.dispatch
   - name: debug
     ansible.builtin.debug:
       var: "I did it!"
