@@ -7,6 +7,6 @@
   - name: include the roles to config controller 
     ansible.builtin.include_role: 
       name: redhat_cop.controller_configuration.dispatch
-  - name: debug
-    ansible.builtin.debug:
-      var: "I did it!"
+  # - name: debug
+  #   ansible.builtin.debug:
+  #     var: "I did it!"
