@@ -1,0 +1,8 @@
+- name: setup controller
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+  - name: debug
+    ansible.builtin.debug:
+      msg: "{{ ansible_host }}"
