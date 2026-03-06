@@ -1,6 +1,6 @@
 ---
 
-aap_user_accounts:
+controller_user_accounts:
 - aap_hostname: aap.example.com
   aap_username: chloe
   aap_password: chloePassword
